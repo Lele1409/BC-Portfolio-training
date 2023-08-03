@@ -1,0 +1,12 @@
+if screen ration is < 1/1: (width/height)
+on mouse hover over header:
+make navbar slide in from top
+else:
+display normally
+
+first letter of section
+
+stand out first section
+
+add image support (box-shadow)
+caroussel, enabled if multiple images in caroussel

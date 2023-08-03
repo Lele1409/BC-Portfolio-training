@@ -1,0 +1,80 @@
+/* VAR */
+
+@import url(https://fonts.googleapis.com/css?family=Alata);
+
+:root {
+    --bg-color: 13, 27, 30;
+    --primary-color: 251, 254, 249;
+    --secondary-color: 122, 139, 153;
+    --accent-color: 104, 131, 186;
+    --accent-color-on-hover: 76, 107, 169;
+}
+
+/* BASE */
+
+html {
+    background-color: rgb(var(--bg-color));
+    color: rgb(var(--primary-color));
+    font-family: "Alata", sans-serif;
+}
+
+/* HEAD */
+
+.header {
+    border-bottom: solid;
+    border-color: rgb(var(--primary-color));
+    border-bottom-width: 1px;
+}
+
+.header-title {
+    text-shadow:     
+    0 1px 0 hsl(174,5%,80%),
+    0 2px 0 hsl(174,5%,75%),
+
+    0 0 5px rgba(0,0,0,.05),
+   0 1px 3px rgba(0,0,0,.2),
+   0 3px 5px rgba(0,0,0,.2),
+  0 5px 10px rgba(0,0,0,.2),
+ 0 10px 10px rgba(0,0,0,.2),
+ 0 20px 20px rgba(0,0,0,.3);
+}
+
+.navbar-button:hover {
+    text-decoration-line: underline;
+    text-decoration-color: rgb(var(--primary-color));
+}
+
+/* MAIN */
+
+.timeline-circle {
+    background-color: rgb(var(--accent-color));
+    border: 1px solid rgb(var(--accent-color-on-hover));
+}
+
+.timeline-circle:hover {
+    background-color: rgb(var(--accent-color-on-hover));
+}
+
+.timeline-line {
+    border: 3px solid rgb(var(--accent-color));
+}
+
+img-caroussel {
+    box-shadow: 0 2px 4px 0 rgba(, .13), 0 1px 1px 0 rgba(0, 0, 0, .11);
+}
+
+.back-to-top-btn {
+    background-color: rgb(var(--secondary-color));
+    box-shadow: 0px 3px 20px .5px rgb(var(--accent-color), .4);
+    border-bottom: 5px solid rgb(var(--secondary-color));
+
+    color: rgb(var(--primary-color));
+}
+
+/* FOOT */
+
+.footer {
+    border-top: solid;
+    border-top-color: rgb(var(--primary-color));
+    border-top-width: 1px;
+}
