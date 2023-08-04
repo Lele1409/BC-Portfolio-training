@@ -10,12 +10,25 @@
     --accent-color-on-hover: 76, 107, 169;
 }
 
-/* BASE */
+/* GENERAL */
 
 html {
     background-color: rgb(var(--bg-color));
     color: rgb(var(--primary-color));
     font-family: "Alata", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+error {
+    color: red;
+    
 }
 
 /* HEAD */
@@ -62,6 +75,10 @@ html {
     border: 3px solid rgb(var(--accent-color));
 }
 
+.section:first-child {
+    background-color: rgb(var(--secondary-color), .4);
+}
+
 img-caroussel {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: rgb(var(--secondary-color), .1);
@@ -102,7 +119,7 @@ button:active {
 
 .back-to-top-btn {
     background-color: rgb(var(--secondary-color));
-    box-shadow: 0px 3px 20px .5px rgb(var(--accent-color), .4);
+    box-shadow: 0px 3px 20px .5px rgb(var(--accent-color), .2);
     border-bottom: 5px solid rgb(var(--secondary-color));
 
     color: rgb(var(--primary-color));

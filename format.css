@@ -9,6 +9,12 @@ html, body {
     }
 }
 
+@media only screen and (min-width: 500px) {
+    .timeline {
+        display: none;
+    }
+}
+
 h1 {
     padding: 0;
     margin: 0;
@@ -98,8 +104,7 @@ h2 {
 }
 
 .section {
-    margin-top: 0;
-    padding-bottom: 1.5em;
+    padding: 0 .5em 1.5em .5em;
 }
 
 img-caroussel {
