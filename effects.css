@@ -27,6 +27,9 @@ html {
 }
 
 .header-title {
+    font-size: xxx-large;
+    letter-spacing: .125em;
+
     text-shadow:     
     0 1px 0 hsl(174,5%,80%),
     0 2px 0 hsl(174,5%,75%),
@@ -60,7 +63,41 @@ html {
 }
 
 img-caroussel {
-    box-shadow: 0 2px 4px 0 rgba(, .13), 0 1px 1px 0 rgba(0, 0, 0, .11);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(var(--secondary-color), .1);
+}
+
+img-caroussel caroussel-progress-tracker {
+    background-color: inherit;
+}
+
+caroussel-progress-tracker button {
+    color: rgb(var(--accent-color));
+    font-weight: bolder;
+
+    border: none;
+    box-shadow: 0 0 0 .1em inset rgb(var(--secondary-color));
+    --_g: linear-gradient(rgb(var(--secondary-color)) 0 0) no-repeat;
+    background: 
+        var(--_g) calc(var(--_p,0%) - 100%) 0%,
+        var(--_g) calc(200% - var(--_p,0%)) 0%,
+        var(--_g) calc(var(--_p,0%) - 100%) 100%,
+        var(--_g) calc(200% - var(--_p,0%)) 100%;
+    background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+    outline-offset: .1em;
+    transition: background-size .4s, background-position 0s .4s;
+}
+
+button:hover {
+    color: rgb(var(--accent-color-on-hover));
+    --_p: 100%;
+    transition:  background-size 0s, background-position .4s;
+}
+
+button:active {
+    box-shadow: 0 0 9e9q inset #0009; 
+    background-color: rgb(var(--secondary-color));
+    color: #fff;
 }
 
 .back-to-top-btn {
